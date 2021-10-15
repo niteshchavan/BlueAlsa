@@ -1,0 +1,7 @@
+#!/bin/bash
+
+bluealsa --profile=a2dp-source --a2dp-force-audio-cd &
+sleep 5
+echo -e "connect EB:06:EF:17:53:65\n" | bluetoothctl
+
+
