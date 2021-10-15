@@ -5,14 +5,7 @@ https://forum.armbian.com/topic/6480-bluealsa-bluetooth-audio-using-alsa-not-pul
 cd && git clone https://github.com/Arkq/bluez-alsa.git
 cd bluez-alsa
 # git checkout tags/v1.3.1 -b v1.3.1
-sudo apt install bluez bluez-tools libglib2.0-dev libasound2-dev build-essential autoconf libbluetooth-dev libtool libsbc-dev automake ibbsd-dev libfdk-aac-dev libncurses5-dev libreadline-dev -y
-sudo apt install libglib2.0-dev -y
-sudo apt install libasound2-dev -y
-sudo apt install build-essential autoconf -y
-sudo apt install libbluetooth-dev -y
-sudo apt install libtool -y
-sudo apt install libsbc-dev -y
-# sudo apt install libbsd-dev libfdk-aac-dev libncurses5-dev libreadline-dev -y
+sudo apt install bluez bluez-tools libglib2.0-dev libasound2-dev build-essential autoconf libbluetooth-dev libtool libsbc-dev automake ibbsd-dev libfdk-aac-dev libncurses5-dev libreadline-dev automake libbsd-dev libfdk-aac-dev libncurses5-dev libreadline-dev -y
 
 mkdir -p m4
 autoreconf --install
@@ -21,8 +14,6 @@ mkdir build && cd build
 #../configure --enable-debug
 ../configure CFLAGS="-g -O0" LDFLAGS="-g" --enable-debug
 make && sudo make install
-
-
 
 #https://forum.armbian.com/topic/6480-bluealsa-bluetooth-audio-using-alsa-not-pulseaudio/
 
