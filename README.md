@@ -1,4 +1,7 @@
 # BlueAlsa
+/etc/apt/sources.list like this:
+
+deb http://ftp.de.debian.org/debian bullseye main non-free
 https://forum.armbian.com/topic/6480-bluealsa-bluetooth-audio-using-alsa-not-pulseaudio/
 
 
@@ -107,3 +110,4 @@ mpg123 -v -@ /home/guido/iradio/MP3_FFH80s
 Disconnecting the trusted/connected BT-device:
 ===================================================
 echo -e "disconnect 00:11:67:3F:9B:18\nquit" | bluetoothctl 
+
