@@ -35,6 +35,7 @@ autoreconf --install
 
 mkdir build && cd build
 
+FOR Raspberry PI Zero use -  ../configure CFLAGS="-g -O0" LDFLAGS="-g" --enable-debug
 
 ../configure --enable-aac --enable-ofono
 (without --enable-debug to get rid of the ebug messages while starting/conencting)
