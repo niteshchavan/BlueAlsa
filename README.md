@@ -2,6 +2,7 @@
 /etc/apt/sources.list like this:
 
 deb http://ftp.de.debian.org/debian bullseye main non-free
+
 https://forum.armbian.com/topic/6480-bluealsa-bluetooth-audio-using-alsa-not-pulseaudio/
 
 
