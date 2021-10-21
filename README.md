@@ -80,11 +80,17 @@ mpg123 -v -a bluealsa -@ /home/guido/iradio/MP3_FFH80s
 
 CREATING a BlueALSA /etc/asound.conf:
 # ===========================================
+
 pcm.!default "bluealsa"
+
 ctl.!default "bluealsa"
+
 defaults.bluealsa.interface "hci0"
+
 defaults.bluealsa.device "00:11:67:3F:9B:18"
+
 defaults.bluealsa.profile "a2dp"
+
 # ===========================================
 
 Info about bluealsa:
