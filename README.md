@@ -5,9 +5,13 @@ set the audio to ALSA default beforehand in setting if you are not getting resul
 Then open ./kodi/userdata/guisettings.xml
 
 <audiooutput>
+
       ...
+      
     <audiodevice>ALSA:bluealsa</audiodevice>
+      
       ...
+      
 This change will be overwritten if you open the settings so be careful.
 
 # Bluetooth on Raspberry Pi Zero
