@@ -1,4 +1,16 @@
-#Bluetooth on Raspberry Pi Zero
+# After completing below Bluetooth install configure kodi to use bluetooth headphones
+
+set the audio to ALSA default beforehand in setting if you are not getting results
+
+Then open ./kodi/userdata/guisettings.xml
+
+<audiooutput>
+      ...
+    <audiodevice>ALSA:bluealsa</audiodevice>
+      ...
+This change will be overwritten if you open the settings so be careful.
+
+# Bluetooth on Raspberry Pi Zero
 
 source https://forum.armbian.com/topic/6480-bluealsa-bluetooth-audio-using-alsa-not-pulseaudio/
 
