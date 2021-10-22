@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cp /nitesh/asound/asound.conf.tv /etc/asound.conf
+
+killall bluealsa
+
+echo -e "disconnect EB:06:EF:17:53:65\n" | bluetoothctl
+
+sleep 5
+/etc/init.d/alsa-utils restart
