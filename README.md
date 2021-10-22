@@ -1,5 +1,5 @@
-# After completing below Bluetooth install configure kodi to use bluetooth headphones
-
+# After completing below Bluetooth install. Configure kodi to use bluetooth headphones
+In kodi settings
 set the audio to ALSA default beforehand in setting if you are not getting results
 
 Then open ./kodi/userdata/guisettings.xml
